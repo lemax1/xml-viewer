@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+    <link rel="stylesheet" href="xml-viewer.css">
+    <style>
+        #demo {
+            height:95%;
+            border: 1px solid gray;
+            overflow:scroll;
+            padding-left: 1em;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="xml-viewer.js"></script>
+    <script>
+        $(function () {
+            $('#demo').xmlViewer('staticDemoFiles/demo.xml');
+            $("#dialog").dialog({height:300});
+        });
+    </script>
+</head>
+<body>
+DIV tag with XML Viewer element
+<div id="dialog">
+    <div id="demo"></div>
+</div>
+</body>
+</html>
